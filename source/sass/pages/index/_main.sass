@@ -1,0 +1,218 @@
+.main
+	width: 100vw
+	height: 660px
+	background: url(../img/bg.jpg) center
+	background-size: cover
+	padding-top: 130px
+	&__wrap
+		display: flex
+		justify-content: space-between
+	&__title-block
+		width: 50%
+		margin-top: 70px
+	&__title
+		font-size: 25px
+		background: linear-gradient(120deg, #fff 10%, #ee3800 90%, transparent 90%)
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+		color: #fff
+		display: table
+		margin: 0
+		& span
+			font-size: 58px
+			text-transform: uppercase
+			font-weight: bold
+	&__block-btn
+		margin-top: 70px
+		display: flex
+		& img
+			padding-left: 20px
+			padding-top: 17px
+			width: auto
+	&__btn
+		position: relative
+		flex-shrink: 0
+		font-size: 14px
+		color: #fff
+		text-decoration: none
+		width: 180px
+		height: 35px
+		padding: 7px 22px
+		background-image: url(../img/btn.png)
+		background-repeat: no-repeat
+		transition: .2s
+		&::before,
+		&::after
+			content: ''
+			position: absolute
+			height: 5px
+			width: 5px
+			background: url(../img/arrow.png)
+		&::before
+			bottom: 0
+			left: 0
+		&::after
+			top: 0
+			right: 0
+			transform: rotate(180deg)
+	&__btn:hover,
+	&__btn:focus
+		background-color: rgba(#fff, .2)
+	&__stats
+		color: #fff
+		width: 380px
+	&__list
+		list-style: none
+		padding: 0
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&__item
+		background: linear-gradient(135deg, transparent 50%, rgba(#fff, .07))
+		width: 185px
+		height: 185px
+		margin-bottom: 10px
+		text-align: center
+		padding-top: 37px
+		cursor: pointer
+		&:hover
+			background: linear-gradient(135deg, transparent 50%, rgba(#fff, .2))
+	&__item:nth-child(2)
+		background: linear-gradient(225deg, transparent 50%, rgba(#fff, .07))
+		&:hover
+			background: linear-gradient(225deg, transparent 50%, rgba(#fff, .2))
+	&__item:nth-child(3)
+		background: linear-gradient(45deg, transparent 50%, rgba(#fff, .07))
+		&:hover
+			background: linear-gradient(45deg, transparent 50%, rgba(#fff, .2))
+	&__item:nth-child(4)
+		background: linear-gradient(315deg, transparent 50%, rgba(#fff, .07))
+		&:hover
+			background: linear-gradient(315deg, transparent 50%, rgba(#fff, .2))
+	&__item p
+		font-size: 18px
+		font-weight: 100
+		color: rgba(#fff, .5)
+		margin: 0
+		margin-bottom: 40px
+	&__item b
+		font-size: 60px
+		font-weight: bold
+		line-height: 20px
+
+@media (max-width: 1300px)
+	.main
+		background: url(../img/bg.jpg) -705px 0
+		height: auto
+		background-size: 2700px
+		&__title-block
+			margin-top: 80px
+		&__title
+			background: linear-gradient(140deg, #fff 10%, #ee3800 84%, transparent 84%)
+			-webkit-background-clip: text
+			-webkit-text-fill-color: transparent
+			color: #fff
+		&__block-btn
+			margin-top: 240px
+		&__stats
+			width: 200px
+			margin-top: -30px
+		&__item
+			background: linear-gradient(225deg, transparent 50%, rgba(#fff, .07))
+			&:hover
+				background: linear-gradient(225deg, transparent 50%, rgba(#fff, .2))
+		&__item:nth-child(2)
+			background: linear-gradient(225deg, transparent 50%, rgba(#fff, .07))
+			&:hover
+				background: linear-gradient(225deg, transparent 50%, rgba(#fff, .2))
+		&__item:nth-child(3)
+			background: linear-gradient(315deg, transparent 50%, rgba(#fff, .07))
+			&:hover
+				background: linear-gradient(315deg, transparent 50%, rgba(#fff, .2))
+		&__item:nth-child(4)
+			background: linear-gradient(315deg, transparent 50%, rgba(#fff, .07))
+			&:hover
+				background: linear-gradient(315deg, transparent 50%, rgba(#fff, .2))
+
+@media (max-width: 1150px)
+	.main
+		background: url(../img/bg.jpg) no-repeat -855px -280px
+		background-size: 3000px
+		&__wrap
+			flex-direction: column
+		&__title-block
+			margin-top: 60px
+		&__title
+			background: linear-gradient(90deg, #fff 10%, #ee3800 100%)
+			-webkit-background-clip: text
+			-webkit-text-fill-color: transparent
+			color: #fff
+		&__block-btn
+			margin-top: 50px
+		&__stats
+			margin-top: 100px
+			width: auto
+		&__item
+			background: linear-gradient(45deg, transparent 50%, rgba(#fff, .07))
+			&:hover
+				background: linear-gradient(45deg, transparent 50%, rgba(#fff, .2))
+		&__item:nth-child(2)
+			background: linear-gradient(45deg, transparent 50%, rgba(#fff, .07))
+			&:hover
+				background: linear-gradient(45deg, transparent 50%, rgba(#fff, .2))
+		&__item:nth-child(3)
+			background: linear-gradient(45deg, transparent 50%, rgba(#fff, .07))
+			&:hover
+				background: linear-gradient(45deg, transparent 50%, rgba(#fff, .2))
+		&__item:nth-child(4)
+			background: linear-gradient(315deg, transparent 50%, rgba(#fff, .07))
+			&:hover
+				background: linear-gradient(315deg, transparent 50%, rgba(#fff, .2))
+
+@media (max-width: 900px)
+	.main
+		background: url(../img/bg.jpg) no-repeat -880px -280px
+		background-size: 3000px
+		&__stats
+			margin-top: 0px
+			width: 290px
+		&__item
+			padding-top: 20px
+			width: 140px
+			height: 140px
+			background: linear-gradient(135deg, transparent 50%, rgba(#fff, .07))
+			&:hover
+				background: linear-gradient(135deg, transparent 50%, rgba(#fff, .2))
+		&__item:nth-child(2)
+			background: linear-gradient(225deg, transparent 50%, rgba(#fff, .07))
+			&:hover
+				background: linear-gradient(225deg, transparent 50%, rgba(#fff, .2))
+		&__item:nth-child(3)
+			background: linear-gradient(45deg, transparent 50%, rgba(#fff, .07))
+			&:hover
+				background: linear-gradient(45deg, transparent 50%, rgba(#fff, .2))
+		&__item:nth-child(4)
+			background: linear-gradient(315deg, transparent 50%, rgba(#fff, .07))
+			&:hover
+				background: linear-gradient(315deg, transparent 50%, rgba(#fff, .2))
+		&__item p
+			font-size: 16px
+			margin-bottom: 20px
+		&__item b
+			font-size: 40px
+
+@media (max-width: 630px)
+	.main
+		background: url(../img/bg.jpg) no-repeat -690px 0
+		background-size: 2000px
+		padding-top: 50px
+		&__title
+			font-size: 20px
+			& span
+				font-size: 35px
+		&__block-btn
+			margin-top: 40px
+			& img
+				display: none
+		&__stats
+			margin-top: 30px
