@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Panton';
+  src: url("../fonts/Panton-Regular.otf") format("otf");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Panton';
+  src: url("../fonts/Panton-SemiBold.otf") format("otf");
+  font-weight: 600;
+  font-style: bold; }
+
+@font-face {
+  font-family: 'Panton';
+  src: url("../fonts/Panton-Bold.otf") format("otf");
+  font-weight: 700;
+  font-style: bold; }
+
+@font-face {
+  font-family: 'Panton';
+  src: url("../fonts/Panton-ExtraBold.otf") format("otf");
+  font-weight: 800;
+  font-style: bold; }
+
+@font-face {
+  font-family: 'Panton';
+  src: url("../fonts/Panton-Black.otf") format("otf");
+  font-weight: 900;
+  font-style: bold; }
