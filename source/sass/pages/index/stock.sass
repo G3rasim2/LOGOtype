@@ -1,0 +1,67 @@
+.stock
+	margin: 40px 0
+	&__wrap
+		display: flex
+		justify-content: space-between
+	&__item
+		position: relative
+		background: linear-gradient(115deg, #0086c0 20%, #3ec4f2)
+		border-radius: 5px
+		width: 48.5%
+		padding: 0 40px
+		padding-bottom: 90px
+		box-shadow: 0 110px 20px -100px rgba(#000, .3)
+		transition: .2s
+		& h2
+			font-size: 48px
+			font-weight: 800
+			color: #fff
+			width: 350px
+		& span
+			font-size: 22px
+			font-weight: 600
+			color: #5dd5fe
+			margin-left: 20px
+		& a
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			z-index: 20
+		& a::before
+			content: ''
+			position: absolute
+			bottom: 40px
+			left: 40px
+			width: 36px
+			height: 36px
+			background: #1d1e1e url(../img/arrow-point-to-right-2.png) no-repeat center
+			border-radius: 50%
+			outline: none
+			transition: .2s
+		& a:hover::before,
+		& a:focus::before
+			opacity: .7
+		& img
+			position: absolute
+		&:first-child img
+			top: -10px
+			right: 20px
+		&:last-child img
+			top: 23px
+			right: 10px
+	&__item:hover,
+	&__item:focus
+		box-shadow: 0 90px 20px -80px rgba(#000, .4)
+	&__item::before
+		position: absolute
+		bottom: 10px
+		left: 140px
+		font-size: 95px
+		font-weight: 800
+		color: rgba(#fff, .3)
+	&__item:first-child::before
+		content: '-30%'
+	&__item:last-child::before
+		content: '-10%'

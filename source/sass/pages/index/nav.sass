@@ -1,0 +1,55 @@
+.nav
+	background: #efefef
+	&__wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__btn
+		display: flex
+		justify-content: space-between
+		align-items: center
+		height: 60px
+		width: 263px
+		padding: 0 20px
+		border: none
+		font-size: 18px
+		font-weight: 600
+		color: #fff
+		background: linear-gradient(to right, #33b9e9, #098fc7)
+		border-radius: 5px
+		cursor: pointer
+	&__list
+		list-style: none
+		padding: 0
+		margin: 0
+		display: flex
+		justify-content: space-between
+		align-items: center
+		width: 74%
+		& li
+			& a
+				position: relative
+				text-decoration: none
+				padding: 20px 0
+				font-size: 18px
+				font-weight: bold
+				color:#1d1e1e
+				outline: none
+				transition: .2s
+			& a::before
+				content: ''
+				position: absolute
+				top: -28px
+				left: calc(50% - 13px)
+				width: 25px
+				height: 25px
+				background: #fff
+				transform: rotate(45deg)
+				transition: .2s
+			& a:hover,
+			& a:focus
+				color: #009ee2
+			& a:hover::before,
+			& a:focus::before
+				top: -19px
+

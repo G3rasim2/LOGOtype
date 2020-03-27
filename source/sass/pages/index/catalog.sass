@@ -1,0 +1,181 @@
+.catalog
+	margin-top: 10px
+	margin-bottom: 60px
+	&__wrap
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+	&__list
+		list-style: none
+		padding: 0
+		margin: 0
+		margin-top: 20px
+		box-shadow: 0 10px 30px -25px #000
+		& a
+			text-decoration: none
+			position: relative
+			display: block
+			width: 263px
+			padding: 14px 20px 14px 60px
+			background: #efefef url(../img/catalog/arrow-point-to-right.png) no-repeat 92% center
+			margin-bottom: 1px
+			font-size: 15px
+			font-weight: 700
+			color: #1d1e1e
+			outline: none
+			transition: .2s
+		& a::before
+			content: ''
+			position: absolute
+			top: calc(50% - 5px)
+			left: 23px
+			width: 10px
+			height: 10px
+			border: 2px solid #1d1e1e
+			border-radius: 50%
+		& a:hover,
+		& a:focus
+			color: #009ee2
+		& li:first-child a
+			border-top-left-radius: 5px
+			border-top-right-radius: 5px
+		& li:last-child a
+			border-bottom-left-radius: 5px
+			border-bottom-right-radius: 5px
+	&__advertising
+		margin-left: 30px
+		overflow: hidden
+	&__carousel-wrap
+		display: flex
+		justify-content: space-between
+		background: linear-gradient(115deg, #0086c0 20%, #3ec4f2)
+		margin-top: 20px
+		margin-bottom: 30px
+		padding-left: 40px
+		padding-right: 80px
+		border-radius: 5px
+		box-shadow: 0 85px 40px -100px #000
+	&__carousel-wrapper
+		width: 50%
+		margin-top: 60px
+		& h2
+			text-transform: uppercase
+			font-size: 40px
+			font-weight: 800
+			color: #fff
+			letter-spacing: 3px
+			margin: 0
+		& p
+			font-size: 22px
+			font-weight: 600
+			color: #4bd1fe
+			margin-top: 24px
+		& span
+			display: block
+			font-size: 30px
+			font-weight: 400
+			color: #fff
+			margin-top: 10px
+		& a
+			display: block
+			text-decoration: none
+			text-transform: uppercase
+			font-size: 16px
+			font-weight: 700
+			color: #fff
+			letter-spacing: 3px
+			margin-top: 30px
+			background: #1d1e1e
+			padding: 20px 50px
+			width: 174px
+			border-radius: 5px
+			outline: none
+			transition: .2s
+		& a:hover,
+		& a:focus
+			color: #009ee2
+	&__advertising .owl-carousel img
+		width: auto
+		margin-top: -20px
+	&__advertising .owl-carousel .owl-dots
+		position: absolute
+		bottom: 64px
+		left: 44px
+		display: flex
+		z-index: 100
+	&__advertising .owl-carousel .owl-dot
+		width: 10px
+		height: 10px
+		margin-right: 17px
+		border: 2px solid #fff
+		border-radius: 50%
+		outline: none
+		transition: .2s
+		&:hover,
+		&:focus
+			opacity: .8
+	&__advertising .owl-carousel .owl-dot.active
+		opacity: .4
+	&__block
+		display: flex
+		justify-content: space-between
+		padding-bottom: 30px
+	&__block-item
+		position: relative
+		display: flex
+	&__block-item img
+		position: absolute
+	&__block-item:first-child img
+		right: -20px
+		bottom: -13px
+	&__block-item:nth-child(2) img
+		right: -20px
+		bottom: -15px
+	&__block-item:last-child img
+		right: 0
+		bottom: -3px
+	&__block-wrap
+		display: flex
+		flex-direction: column
+		width: 261px
+		height: 172px
+		border-radius: 5px
+		padding: 20px
+		background: linear-gradient(115deg, #0086c0 20%, #3ec4f2)
+		box-shadow: 0 10px 30px -15px rgba(#000, .8)
+		transition: .2s
+		&:hover,
+		&:focus
+			box-shadow: 0 10px 30px -15px #000
+		& h3
+			text-transform: uppercase
+			font-size: 20px
+			font-weight: 700
+			color: #fff
+			margin: 0
+		& p
+			font-size: 14px
+			font-weight: 600
+			color: #4cd2fe
+			margin-top: 14px
+		& a
+			position: absolute
+			left: 0
+			bottom: 0
+			width: 100%
+			height: 100%
+			z-index: 20
+			outline: none
+			transition: .2s
+		& a::before
+			content: ''
+			position: absolute
+			left: 20px
+			bottom: 20px
+			width: 25px
+			height: 25px
+			background: #1d1e1e url(../img/arrow-point-to-right-2.png) no-repeat center
+			border-radius: 50%
+		& a:hover,
+		& a:focus
+			opacity: .7

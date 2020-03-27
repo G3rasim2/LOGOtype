@@ -1,0 +1,52 @@
+.users
+	padding: 30px 0
+	&__wrap
+		display: flex
+		align-items: center
+	&__logo
+		text-decoration: none
+		font-size: 50px
+		font-weight: 900
+		letter-spacing: 4.5px
+		color: #0086c0
+		outline: none
+		transition: .2s
+	&__logo:hover,
+	&__logo:focus
+		opacity: .8
+	&__form
+		width: 50%
+		margin-left: 30px
+	&__search
+		border: 1px solid #dddddd
+		width: 100%
+		padding: 12px 24px
+		border-radius: 5px
+		background: url(../img/users/search.png) no-repeat 97% center
+		font-size: 15px
+		outline: none
+		transition: .2s
+	&__search:placeholder
+		font-size: 15px
+	&__search:hover,
+	&__search:focus
+		border-color: #000
+	&__icon
+		margin-left: auto
+		display: flex
+		justify-content: space-between
+		width: 21%
+		& a
+			position: relative
+			outline: none
+			transition: .2s
+			& span
+				position: absolute
+				top: -6px
+				right: -13px
+				font-size: 16px
+				font-weight: 600
+				color: #009ee2
+		& a:hover,
+		& a:focus
+			opacity: .7
